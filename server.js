@@ -8,7 +8,7 @@ const routes = require('./src/routes');
 
 const app = express();
 const port = process.env.PORT || 5000;
-const linkConnection = `mongodb://${process.env.QOVERY_MONGODB_ZF0FECDA9_HOST}:${QOVERY_MONGODB_ZF0FECDA9_PORT}/${QOVERY_MONGODB_ZF0FECDA9_DEFAULT_DATABASE_NAME}`;
+const linkConnection = `mongodb://${process.env.QOVERY_MONGODB_ZF0FECDA9_HOST}:${process.env.QOVERY_MONGODB_ZF0FECDA9_PORT}/${process.env.QOVERY_MONGODB_ZF0FECDA9_DEFAULT_DATABASE_NAME}`;
 
 mongoose.connect(linkConnection, {
     useUnifiedTopology:true,
